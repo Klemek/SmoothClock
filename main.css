@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+}
+
+canvas {
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+a:visited {
+    font-style: italic;
+}
+
+#pan1,
+#pan2 {
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 5px;
+    z-index: 1;
+    top: .25em;
+    padding: 0.5em 1em;
+    background: #262626;
+    color: #aaa;
+    text-align: left;
+    font: 1em trebuchet ms, verdana, sans serif;
+    transition: opacity 0.5s;
+    opacity: 0.9;
+}
+
+#preview {
+    width: 0%;
+    opacity: 0;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#preview img {
+    border-radius: 5px;
+    border: 3px solid #aaa;
+    margin: inherit;
+    width: 95%;
+}
+
+#pan1 {
+    left: .25em;
+}
+
+#pan2 {
+    right: .25em;
+}
+
+#hidden-player {
+    position: absolute;
+    visibility: hidden;
+    display: inline;
+}
